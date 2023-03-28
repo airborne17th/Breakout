@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Breakout</title>
+    <meta property="og:title" content="JavaScript Breakout" />
+    <meta name="description" content="Breakout game made with JavaScript." />
+    <meta name="keywords" content="JavaScript, Breakout, Game" />
+    <meta name="author" content="John Kyker" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
+<body>
+    <div id="main">
+        <h1 class="title">Breakout</h1>
+        <div class="controls">
+            <p>Controls</p>
+            <p class="controls">Play with Arrow keys or Mouse</p>
+            <p>Music: M SFX: S Volume: ↑ ↓ Start: Space Pause: P Change Song: C</p>
+        </div>
+    </div>
+    <canvas id="breakout" width="800" height="600"></canvas>
+    <br/>
+    <div id="button-panel">
+    <button id="play-button" onclick="play()">START</button>
+    <button id="play-button" onclick="togglePause()">PAUSE</button>
+    <button id="play-button" onclick="changeSong()">SHUFFLE</button>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
