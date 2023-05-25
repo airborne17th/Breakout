@@ -292,12 +292,6 @@ function keyDownHandler(e) {
     if (game.on && (e.key === 's' || e.key === 'S')) {
         game.sfx = !game.sfx;
     }
-    if (e.key === 'ArrowUp') {
-        volumeUp();
-    }
-    if (e.key === 'ArrowDown') {
-        volumeDown();
-    }
     if (e.key === 'ArrowRight') {
         game.rightKey = true;
     } else if (e.key === 'ArrowLeft') {
@@ -396,6 +390,7 @@ function togglePause() {
     } else {
         ball.dx = prevSpeedx;
         ball.dy = prevSpeedy;
+        ball.radius = 10;
         paused = true;
     }
 }
